@@ -6,22 +6,22 @@ namespace palindrom
     {
         static void Main(string[] args)
         {
-            string _inputstr, _reversestr = string.Empty;
+            string input, reverse = string.Empty;
             Console.Write("Enter a string : ");
-            _inputstr = Console.ReadLine();
-            if (_inputstr != null)
+            input = Console.ReadLine();
+            if (input != null)
             {
-                for (int i = _inputstr.Length - 1; i >= 0; i--)
+                for (int i = input.Length - 1; i >= 0; i--)
                 {
-                    _reversestr += _inputstr[i].ToString();
+                    reverse += input[i].ToString();
                 }
-                if (_reversestr == _inputstr)
+                if (reverse == input)
                 {
-                    Console.WriteLine("String is Palindrome Input = {0} and Output= {1}", _inputstr, _reversestr);
+                    Console.WriteLine("String is Palindrome Input = {0} and Output= {1}", input, reverse);
                 }
                 else
                 {
-                    Console.WriteLine("String is not Palindrome Input = {0} and Output= {1}", _inputstr, _reversestr);
+                    Console.WriteLine("String is not Palindrome Input = {0} and Output= {1}", input, reverse);
                 }
             }
             Console.ReadLine();
